@@ -72,8 +72,7 @@ console.log(agesSet)
 
 
 
-// for(let i = 0;i < ages.length; i++){
-//   ages[i] + 1
-
-//   console.log(ages[i])
-// }
+for(let i = 0;i < ages.length; i++){
+  let sCet = ages[i] + 1
+  console.log(sCet)
+}
