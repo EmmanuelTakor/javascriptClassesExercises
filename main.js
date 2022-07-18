@@ -48,13 +48,32 @@ console.log(Car1.fullInfo());
 console.log(Person.name);
 console.log(Car1.color);
 
-let set = [1, 2, 3, 4, 5];
+let ages = [1,2,3,4]
 
-function evolvedValue(number){
-  
-    return number > 1
-  }
+function add(number){
+  return number * 3
+}
 
-const answer = set.find(evolvedValue);
+console.log(add(3))
 
-console.log(answer)
+
+  ages.forEach(value=>{
+  // console.log(value.toLocaleUpperCase())
+ console.log( value * 3)
+})
+// console.log(x)
+
+const agesSet = ages.filter(value=>{
+  return value < 5;
+})
+
+console.log(agesSet)
+
+
+
+
+// for(let i = 0;i < ages.length; i++){
+//   ages[i] + 1
+
+//   console.log(ages[i])
+// }
