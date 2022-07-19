@@ -76,3 +76,51 @@ for(let i = 0;i < ages.length; i++){
   let sCet = ages[i] + 1
   console.log(sCet)
 }
+
+
+  let x = ages.forEach((age)=>{
+  if(age = 3){
+    // throw "Error! Age === 3"
+  }
+})
+
+
+console.log(x)
+
+let y = ages.forEach((value)=>{
+  try {
+    if(value ==2){
+1 + 1
+    }
+  } catch(error){
+console.log(error)
+  }
+})
+
+// console.log(y)
+
+function details(firstName,...lastName){
+  return lastName
+}
+
+console.log(details("Takor","Emmanuel","John"))
+
+function giveDetails(...info){
+return info
+}
+
+console.log(giveDetails("fromTiko","Emmanuel","Takor","isAnglophone"));
+
+let ids = [1111111111,2222222,33333,44444]
+console.log(ids)
+
+let newArray =[];
+
+ids.forEach((id)=>{
+  if(id !== 44444){
+    newArray.push(id)
+  }
+})
+
+console.log(newArray)
+
