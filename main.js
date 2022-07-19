@@ -48,85 +48,77 @@ console.log(Car1.fullInfo());
 console.log(Person.name);
 console.log(Car1.color);
 
-let ages = [1,2,3,4]
+let ages = [1, 2, 3, 4];
 
-function add(number){
-  return number * 3
+function add(number) {
+  return number * 3;
 }
 
-console.log(add(3))
+console.log(add(3));
 
-
-  ages.forEach(value=>{
+ages.forEach((value) => {
   // console.log(value.toLocaleUpperCase())
- console.log( value * 3)
-})
+  console.log(value * 3);
+});
 // console.log(x)
 
-const agesSet = ages.filter(value=>{
+const agesSet = ages.filter((value) => {
   return value < 5;
-})
+});
 
-console.log(agesSet)
+console.log(agesSet);
 
-
-
-
-for(let i = 0;i < ages.length; i++){
-  let sCet = ages[i] + 1
-  console.log(sCet)
+for (let i = 0; i < ages.length; i++) {
+  let sCet = ages[i] + 1;
+  console.log(sCet);
 }
 
-
-  let x = ages.forEach((age)=>{
-  if(age = 3){
+let x = ages.forEach((age) => {
+  if ((age = 3)) {
     // throw "Error! Age === 3"
   }
-})
+});
 
+console.log(x);
 
-console.log(x)
-
-let y = ages.forEach((value)=>{
+let y = ages.forEach((value) => {
   try {
-    if(value ==2){
-1 + 1
+    if (value == 2) {
+      1 + 1;
     }
-  } catch(error){
-console.log(error)
+  } catch (error) {
+    console.log(error);
   }
-})
+});
 
 // console.log(y)
 
-function details(firstName,...lastName){
-  return lastName
+function details(firstName, ...lastName) {
+  return lastName;
 }
 
-console.log(details("Takor","Emmanuel","John"))
+console.log(details("Takor", "Emmanuel", "John"));
 
-function giveDetails(...info){
-return info
+function giveDetails(...info) {
+  return info;
 }
 
-console.log(giveDetails("fromTiko","Emmanuel","Takor","isAnglophone"));
+console.log(giveDetails("fromTiko", "Emmanuel", "Takor", "isAnglophone"));
 
-let ids = [1111111111,2222222,33333,44444]
-console.log(ids)
+let ids = [1111111111, 2222222, 33333, 44444];
+console.log(ids);
 
-let newArray =[];
+let newArray = [];
 
-ids.forEach((id)=>{
-  if(id !== 44444){
-    newArray.push(id)
+ids.forEach((id) => {
+  if (id !== 44444) {
+    newArray.push(id);
   }
-})
+});
 
-console.log(newArray)
+console.log(newArray);
 
+const someDetailOne = ["I", "am", "a"];
+const someDetailTwo = [...someDetailOne, "boy"];
 
-
-let moreDetails =["a","young","man"];
-let details = ["I","am",moreDetails];
-
-console.log(details)
+console.log(someDetailTwo);
