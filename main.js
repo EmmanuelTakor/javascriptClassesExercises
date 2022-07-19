@@ -124,3 +124,9 @@ ids.forEach((id)=>{
 
 console.log(newArray)
 
+
+
+let moreDetails =["a","young","man"];
+let details = ["I","am",moreDetails];
+
+console.log(details)
